@@ -46,6 +46,7 @@
             this.cbNothing = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnSwap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtINPUT
@@ -172,7 +173,7 @@
             // btnCopy
             // 
             this.btnCopy.Enabled = false;
-            this.btnCopy.Location = new System.Drawing.Point(394, 439);
+            this.btnCopy.Location = new System.Drawing.Point(394, 394);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(123, 23);
             this.btnCopy.TabIndex = 14;
@@ -192,9 +193,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(394, 356);
+            this.button1.Location = new System.Drawing.Point(394, 338);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 39);
+            this.button1.Size = new System.Drawing.Size(123, 21);
             this.button1.TabIndex = 16;
             this.button1.Text = "Parse Filename Strings";
             this.button1.UseVisualStyleBackColor = true;
@@ -202,7 +203,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(394, 402);
+            this.button2.Location = new System.Drawing.Point(394, 365);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 23);
             this.button2.TabIndex = 17;
@@ -210,11 +211,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnSwap
+            // 
+            this.btnSwap.Location = new System.Drawing.Point(394, 423);
+            this.btnSwap.Name = "btnSwap";
+            this.btnSwap.Size = new System.Drawing.Size(123, 23);
+            this.btnSwap.TabIndex = 18;
+            this.btnSwap.Text = "<-----------";
+            this.btnSwap.UseVisualStyleBackColor = true;
+            this.btnSwap.Click += new System.EventHandler(this.btnSwap_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 485);
+            this.Controls.Add(this.btnSwap);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbNothing);
@@ -260,6 +272,7 @@
         private System.Windows.Forms.CheckBox cbNothing;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSwap;
     }
 }
 

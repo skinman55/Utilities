@@ -108,5 +108,10 @@ namespace CharReplace
                 txtOUTPUT.Text += str + Environment.NewLine;
             }
         }
+
+        private void btnSwap_Click(object sender, EventArgs e)
+        {
+            txtINPUT.Text = txtOUTPUT.Text;
+        }
     }
 }
