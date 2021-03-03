@@ -47,6 +47,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSwap = new System.Windows.Forms.Button();
+            this.btnUrlDecode = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtINPUT
@@ -68,7 +69,7 @@
             // 
             // txtReplaceStr
             // 
-            this.txtReplaceStr.Location = new System.Drawing.Point(394, 214);
+            this.txtReplaceStr.Location = new System.Drawing.Point(394, 175);
             this.txtReplaceStr.Name = "txtReplaceStr";
             this.txtReplaceStr.Size = new System.Drawing.Size(100, 20);
             this.txtReplaceStr.TabIndex = 3;
@@ -96,7 +97,7 @@
             // chkCRLFReplace
             // 
             this.chkCRLFReplace.AutoSize = true;
-            this.chkCRLFReplace.Location = new System.Drawing.Point(394, 263);
+            this.chkCRLFReplace.Location = new System.Drawing.Point(394, 224);
             this.chkCRLFReplace.Name = "chkCRLFReplace";
             this.chkCRLFReplace.Size = new System.Drawing.Size(53, 17);
             this.chkCRLFReplace.TabIndex = 7;
@@ -106,7 +107,7 @@
             // chkTABReplace
             // 
             this.chkTABReplace.AutoSize = true;
-            this.chkTABReplace.Location = new System.Drawing.Point(394, 240);
+            this.chkTABReplace.Location = new System.Drawing.Point(394, 201);
             this.chkTABReplace.Name = "chkTABReplace";
             this.chkTABReplace.Size = new System.Drawing.Size(47, 17);
             this.chkTABReplace.TabIndex = 6;
@@ -115,7 +116,7 @@
             // 
             // btnMakeItSo
             // 
-            this.btnMakeItSo.Location = new System.Drawing.Point(394, 309);
+            this.btnMakeItSo.Location = new System.Drawing.Point(394, 270);
             this.btnMakeItSo.Name = "btnMakeItSo";
             this.btnMakeItSo.Size = new System.Drawing.Size(75, 23);
             this.btnMakeItSo.TabIndex = 8;
@@ -164,7 +165,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(391, 181);
+            this.label4.Location = new System.Drawing.Point(391, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 13;
@@ -184,7 +185,7 @@
             // cbNothing
             // 
             this.cbNothing.AutoSize = true;
-            this.cbNothing.Location = new System.Drawing.Point(394, 286);
+            this.cbNothing.Location = new System.Drawing.Point(394, 247);
             this.cbNothing.Name = "cbNothing";
             this.cbNothing.Size = new System.Drawing.Size(63, 17);
             this.cbNothing.TabIndex = 15;
@@ -221,11 +222,22 @@
             this.btnSwap.UseVisualStyleBackColor = true;
             this.btnSwap.Click += new System.EventHandler(this.btnSwap_Click);
             // 
+            // btnUrlDecode
+            // 
+            this.btnUrlDecode.Location = new System.Drawing.Point(394, 311);
+            this.btnUrlDecode.Name = "btnUrlDecode";
+            this.btnUrlDecode.Size = new System.Drawing.Size(123, 21);
+            this.btnUrlDecode.TabIndex = 19;
+            this.btnUrlDecode.Text = "URL Decode";
+            this.btnUrlDecode.UseVisualStyleBackColor = true;
+            this.btnUrlDecode.Click += new System.EventHandler(this.btnUrlDecode_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 485);
+            this.Controls.Add(this.btnUrlDecode);
             this.Controls.Add(this.btnSwap);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -273,6 +285,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSwap;
+        private System.Windows.Forms.Button btnUrlDecode;
     }
 }
 

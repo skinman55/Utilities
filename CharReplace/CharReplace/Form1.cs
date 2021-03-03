@@ -113,5 +113,63 @@ namespace CharReplace
         {
             txtINPUT.Text = txtOUTPUT.Text;
         }
+
+        private void btnUrlDecode_Click(object sender, EventArgs e)
+        {
+            var encodedChars = new Dictionary<string, string>
+            {
+                {"%21", "!"},
+                {"%23", "#"},
+                {"%24", "$"},
+                {"%26", "&"},
+                {"%27", "'"},
+                {"%28", "("},
+                {"%29", ")"},
+                {"%2A", "*"},
+                {"%2B", "+"},
+                {"%2C", ","},
+                {"%2F", "/"},
+                {"%3A", ":"},
+                {"%3B", ";"},
+                {"%3D", "="},
+                {"%3F", "?"},
+                {"%40", "@"},
+                {"%5B", "["},
+                {"%5D", "]"},
+                {"%20", " "},
+                {"%22", "\""},
+                {"%25", "%"},
+                {"%2D", "-"},
+                {"%2E", "."},
+                {"%3C", "<"},
+                {"%3E", ">"},
+                {"%5C", "\\"},
+                {"%5E", "^"},
+                {"%5F", "_"},
+                {"%60", "`"},
+                {"%7B", "{"},
+                {"%7C", "|"},
+                {"%7D", "}"},
+                {"%7E", "~"},
+                {"&", "\r\n"},
+            };
+
+
+            var output = txtINPUT.Text;
+
+            foreach (var c in encodedChars)
+            {
+                output = output.Replace(c.Key, c.Value);
+            }
+
+            //run it twice to get double encoded strings
+            foreach (var c in encodedChars)
+            {
+                output = output.Replace(c.Key, c.Value);
+            }
+
+            txtOUTPUT.Text = output;
+        }
     }
 }
+
